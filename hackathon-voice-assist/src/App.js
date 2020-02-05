@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import { Layout, Olive } from '@olive/react'
 import HeaderImg from './images/Header.PNG'
 import FooterImg from './images/Footer.PNG'
 import DocumentViewer from './DocumentViewer';
+import SpeechRecognition from './SpeechRegconition'
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <img src={HeaderImg} alt="Header" width="100%" />
         </div>
         <div className="document-body">
+          <SpeechRecognition/>
           <DocumentViewer />
         </div>
         <div className="sticky-footer">
