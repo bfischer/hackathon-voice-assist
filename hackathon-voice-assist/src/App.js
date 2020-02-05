@@ -1,17 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Layout, Olive } from '@olive/react'
+import HeaderImg from './images/Header.PNG'
+import FooterImg from './images/Footer.PNG'
 import DocumentViewer from './DocumentViewer';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <>
-      <Header/>
-      <DocumentViewer />
-      <Footer/>
-    </>
+    <Olive>
+      <Layout>
+        <Layout.Header>
+          <img src={HeaderImg} alt="Header" width="100%"/>
+        </Layout.Header>
+        <Layout.Body>
+          <DocumentViewer/>
+        </Layout.Body>
+        <Layout.Footer>
+          <img src={FooterImg} alt="Footer" width="100%"/>
+        </Layout.Footer>
+      </Layout>
+    </Olive>
   );
 }
 
