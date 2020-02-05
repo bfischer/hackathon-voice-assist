@@ -12,16 +12,19 @@ const propTypes = {
 const Dictaphone = ({
   transcript,
   resetTranscript,
-  browserSupportsSpeechRecognition
+  browserSupportsSpeechRecognition,
+  onTranscriptChange,
 }) => {
+  React.useEffect(() => {
+    onTranscriptChange(transcript);
+  }, [transcript])
+
   if (!browserSupportsSpeechRecognition) {
     return null;
   }
 
   return (
     <div>
-      <button onClick={resetTranscript}>Reset</button>
-      <span>{transcript}</span>
     </div>
   );
 };

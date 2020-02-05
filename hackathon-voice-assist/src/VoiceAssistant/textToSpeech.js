@@ -3,12 +3,13 @@ import Speech from 'react-speech';
 
 function TextToSpeech({text, boolPlay, boolStop, boolPause, boolResume}){
 
-    useEffect(() => {
-        document.getElementsByClassName('rs-play')[0].style.display = 'none';
+   useEffect(() => {
+       document.getElementsByClassName('rs-play')[0].style.display = 'none';
     })
 
     useEffect(() => {
         if (boolPlay){
+            console.error('should read now')
             document.getElementsByClassName('rs-play')[0].click();
         }
     }, [boolPlay]);
