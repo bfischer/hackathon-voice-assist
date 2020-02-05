@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import {Button} from '@olive/react';
 import Speech from 'react-speech';
 import './DocumentViewer.css';
+import SignButton from './components/button';
 
 const DocumentViewer = () => {
     const [currentSpeech, setCurrentSpeech] = React.useState('');
@@ -34,11 +35,13 @@ const DocumentViewer = () => {
     return (
         <div className="document-viewer">
             {
-                currentSpeech ? <Speech styles={style} text={currentSpeech} /> : null
+                currentSpeech ? <Speech  text={currentSpeech} /> : null
             }
             <div className="document-viewer__document">
                 This is a test document. This is meant to demonstrate how to sign
                  using only your voice.
+
+                 <SignButton isSigned={isSigned} />
             </div>
         </div>
     );

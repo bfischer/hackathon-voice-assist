@@ -7,15 +7,11 @@
 
 .document-viewer__document {
     font-size: 12px;
-    height: 820px;
+    height: 900px;
     margin: 10px auto;
     width: 75%;
     border: 1px solid #cccccc;
     padding: 40px;
-    width: 700px;
+    width: 600px;
     background-color: white;
-}
-
-.document-viewer__start-button {
-    position: absolute;
 }
