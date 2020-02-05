@@ -1,6 +1,5 @@
 import React from 'react';
 import './DocumentViewer.css';
-import SignButton from './components/button';
 
 const DocumentViewer = () => {
   return (
@@ -16,7 +15,7 @@ Suspendisse tincidunt elit id posuere laoreet. Nunc egestas nisi nec nibh laoree
 
 Nullam id orci porta, dictum libero sed, imperdiet ex. In hac habitasse platea dictumst. Integer vehicula dolor dui, ut consectetur ex placerat eu. Curabitur vel consequat libero, at lacinia velit. Cras ex enim, accumsan quis aliquet sit amet, egestas at lacus. Etiam tristique vulputate sem, vel varius quam dignissim ut. Mauris at ipsum accumsan, iaculis justo imperdiet, vehicula enim. Nam consectetur finibus felis. Integer aliquet lorem eget lectus ornare, a tempor enim hendrerit. Duis ac dolor eros. Nam vel nunc libero. Donec ac bibendum elit.
 
-Generated 5 paragraphs, 505 words, 3353 bytes of Lorem Ipsum <SignButton isSigned={true}/>
+Generated 5 paragraphs, 505 words, 3353 bytes of Lorem Ipsum
       </div>
     </div>
   );
