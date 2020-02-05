@@ -7,12 +7,12 @@
 
 .document-viewer__document {
     font-size: 12px;
-    height: 900px;
+    height: 820px;
     margin: 10px auto;
     width: 75%;
     border: 1px solid #cccccc;
     padding: 40px;
-    width: 600px;
+    width: 700px;
     background-color: white;
 }
 

@@ -6,9 +6,6 @@ import './DocumentViewer.css';
 const DocumentViewer = () => {
     return (
         <div className="document-viewer">
-            <div className="document-viewer__start-button">
-                <Button kind="main" text="start" />
-            </div>
             <div className="document-viewer__document">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, sapien in commodo pretium, turpis dui dignissim justo, et vulputate augue nibh in sem. Ut suscipit nibh ut sem hendrerit elementum. Fusce nibh diam, porttitor et laoreet vitae, congue eu magna. Fusce lacinia fringilla accumsan. Donec laoreet elit mauris. Nunc nec eros eu ex tincidunt mattis sed et magna. Morbi congue erat elit, sit amet faucibus orci pulvinar in. Quisque venenatis, mi a blandit pretium, eros justo vehicula dui, et aliquet quam orci sit amet nunc. Mauris ultrices dignissim lacus, id efficitur ligula pellentesque a. Nullam consequat blandit mauris sit amet aliquet. Curabitur sed orci quis mi convallis consequat. Phasellus iaculis, velit sed ultrices elementum, augue turpis dictum nunc, ut euismod magna nisl vel nibh. Duis dapibus justo massa, et commodo neque congue vitae.
           
