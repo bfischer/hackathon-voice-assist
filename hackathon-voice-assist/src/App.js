@@ -7,19 +7,17 @@ import DocumentViewer from './DocumentViewer';
 
 function App() {
   return (
-    <Olive>
-      <Layout>
-        <Layout.Header>
-          <img src={HeaderImg} alt="Header" width="100%"/>
-        </Layout.Header>
-        <Layout.Body>
-          <DocumentViewer/>
-        </Layout.Body>
-        <Layout.Footer>
-          <img src={FooterImg} alt="Footer" width="100%"/>
-        </Layout.Footer>
-      </Layout>
-    </Olive>
+      <div>
+        <div className="sticky-header">
+          <img src={HeaderImg} alt="Header" width="100%" />
+        </div>
+        <div className="document-body">
+          <DocumentViewer />
+        </div>
+        <div className="sticky-footer">
+          <img src={FooterImg} alt="Footer" width="100%" />
+        </div>
+      </div>
   );
 }
 

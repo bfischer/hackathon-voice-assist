@@ -1,3 +1,21 @@
 body{
   background-color: rgb(233, 233, 233);
 }
+
+.sticky-header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.sticky-footer{
+  position: fixed;
+  bottom: -4px;
+  width: 100%;
+}
+
+.document-body{
+  top: 100px;
+  position: relative;
+}
