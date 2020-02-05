@@ -1,0 +1,17 @@
+.document-viewer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(233, 233, 233);
+}
+
+.document-viewer__document {
+    font-size: 12px;
+    height: 900px;
+    margin: 10px auto;
+    width: 75%;
+    border: 1px solid #cccccc;
+    padding: 40px;
+    width: 600px;
+    background-color: white;
+}
