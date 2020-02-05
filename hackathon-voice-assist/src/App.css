@@ -11,7 +11,7 @@ body{
 
 .sticky-footer{
   position: fixed;
-  bottom: 0;
+  bottom: -4px;
   width: 100%;
 }
 
