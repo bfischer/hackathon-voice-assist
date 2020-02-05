@@ -3,6 +3,7 @@ import './App.css';
 import { Layout } from '@olive/react'
 import HeaderImg from './images/Header.PNG'
 import FooterImg from './images/Footer.PNG'
+import DocumentViewer from './DocumentViewer';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <img src={HeaderImg} alt="Header" width="100%"/>
       </Layout.Header>
       <Layout.Body>
-      Body
+        <DocumentViewer/>
       </Layout.Body>
       <Layout.Footer>
         <img src={FooterImg} alt="Footer" width="100%"/>
