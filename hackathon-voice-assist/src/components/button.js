@@ -4,13 +4,10 @@ import React, { Component } from 'react';
 // import { Container } from './styles';
 
 export default class SignButton extends Component {
-    state={
-        isSigned: this.props.isSigned
-    }
     render() {
         return (
             <div>
-                {this.state.isSigned?
+                {this.props.isSigned?
                     <Signature
                         name="Amy Templeton"
                         userId="83F3A089A46C4FEAD23804"
