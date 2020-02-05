@@ -1,23 +1,22 @@
 import React from 'react';
 import './App.css';
-import { Layout } from '@olive/react'
 import HeaderImg from './images/Header.PNG'
 import FooterImg from './images/Footer.PNG'
 import DocumentViewer from './DocumentViewer';
 
 function App() {
   return (
-    <Layout>
-      <Layout.Header>
+    <div>
+      <div className="sticky-header">
         <img src={HeaderImg} alt="Header" width="100%"/>
-      </Layout.Header>
-      <Layout.Body>
+      </div>
+      <div className="document-body">
         <DocumentViewer/>
-      </Layout.Body>
-      <Layout.Footer>
+      </div>
+      <div className="sticky-footer">
         <img src={FooterImg} alt="Footer" width="100%"/>
-      </Layout.Footer>
-    </Layout>
+      </div>
+    </div>
   );
 }
 
