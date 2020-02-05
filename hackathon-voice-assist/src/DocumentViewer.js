@@ -4,6 +4,7 @@ import {Button} from '@olive/react';
 import Speech from 'react-speech';
 import './DocumentViewer.css';
 import SignButton from './components/button';
+import TextToSpeech from './VoiceAssistant/textToSpeech';
 
 const DocumentViewer = () => {
     const [currentSpeech, setCurrentSpeech] = React.useState('');
@@ -15,27 +16,27 @@ const DocumentViewer = () => {
            
              setTimeout(() => {
                  setIsSigned(true);
-             }, 2500)
+             }, 10000)
         }, 2000)
     }, []);
 
-    React.useEffect(() => {
-        setTimeout(() => {
-            let button = document.getElementsByClassName('rs-play');
+    // React.useEffect(() => {
+    //     setTimeout(() => {
+    //         let button = document.getElementsByClassName('rs-play');
           
-            if(button && button[0]) {
-                console.error(button)
-                console.error(button[0])
-                button[0].click();
-            }
-        }, 2500)
+    //         if(button && button[0]) {
+    //             console.error(button)
+    //             console.error(button[0])
+    //             button[0].click();
+    //         }
+    //     }, 2500)
        
-    }, [currentSpeech]);
+    // }, [currentSpeech]);
 
     return (
         <div className="document-viewer">
             {
-                currentSpeech ? <Speech  text={currentSpeech} /> : null
+                currentSpeech ? <TextToSpeech text={currentSpeech} boolPlay={!!currentSpeech} /> : null
             }
             <div className="document-viewer__document">
                 This is a test document. This is meant to demonstrate how to sign
