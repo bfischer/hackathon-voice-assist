@@ -1,16 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
+import { Layout } from '@olive/react'
+import HeaderImg from './images/Header.PNG'
+import FooterImg from './images/Footer.PNG'
 
 function App() {
   return (
-    <>
-      <Header/>
-      {/* Body */}
-      <Footer/>
-    </>
+    <Layout>
+      <Layout.Header>
+        <img src={HeaderImg} alt="Header" width="100%"/>
+      </Layout.Header>
+      <Layout.Body>
+      Body
+      </Layout.Body>
+      <Layout.Footer>
+        <img src={FooterImg} alt="Footer" width="100%"/>
+      </Layout.Footer>
+    </Layout>
   );
 }
 
