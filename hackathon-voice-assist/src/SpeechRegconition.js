@@ -16,7 +16,7 @@ const Dictaphone = ({
   onTranscriptChange,
 }) => {
   React.useEffect(() => {
-    onTranscriptChange(transcript);
+    onTranscriptChange(transcript); 
   }, [transcript])
 
   if (!browserSupportsSpeechRecognition) {

@@ -9,7 +9,7 @@ export default class SignButton extends Component {
             <div>
                 {this.props.isSigned?
                     <Signature
-                        name="Amy Templeton"
+                        name="Anh Bien"
                         userId="83F3A089A46C4FEAD23804"
                     />
                     :
